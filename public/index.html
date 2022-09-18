@@ -2,14 +2,26 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="icon" href="%PUBLIC_URL%/images/birdie.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <meta name="description" content="Homepage of my testing ground to learn web development" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/images/birdie.svg" />
+    <meta name="keywords" content="web development, mern stack, nodejs, react, assignments">
+    <meta property="og:title" content="Bob's Playground - Home Page of Assignments">
+    <meta property="og:url" content="%PUBLIC_URL%">
+    <meta property="og:description" content="Homepage of my testing ground to learn web development">
+    <meta property="og:image" content="%PUBLIC_URL%/images/birdie.svg">
+    <meta property="og:image:secure_url" content="%PUBLIC_URL%/images/birdie.svg">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Bob's Playground">
+    <meta name="twitter:domain" content="%PUBLIC_URL%">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Bob's Playground - Home Page of Assignments">
+    <meta name="twitter:url" content="%PUBLIC_URL%">
+    <meta name="twitter:description" content="Homepage of my testing ground to learn web development">
+    <meta name="twitter:image" content="%PUBLIC_URL%/images/birdie.svg">
+
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -24,11 +36,32 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>Bob's Playground - Home Page of Assignments</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <div class="App">
+      <header class="App-header">
+        <img src="/images/birdie.svg" class="App-logo" alt="Tuiter Bird logo" />
+        <p>
+          Bob's Playground - Home Page of Assignments
+        </p>
+        <ul>
+          <li>
+            <a
+                    class="App-link"
+                    href="/a2/index.html"
+                    target="_blank"
+                    rel="noopener noreferrer"
+            >
+              Assignment 2
+            </a>
+          </li>
+        </ul>
+
+      </header>
+    </div>
+    <!-- <div id="root"></div> -->
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
