@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 2 - Tuiter Home Page | Bob's Playground</title>
+    <meta charset="utf-8"/>
+    <link href="../images/birdie.svg" rel="icon"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <meta content="#000000" name="theme-color"/>
+    <meta content="Homepage of Tuiter Website"
+          name="description"/>
+    <link href="../images/birdie.svg" rel="apple-touch-icon"/>
+    <meta content="tuiter, social media, home, page" name="keywords">
+    <meta content="Assignment 2 - Tuiter Home Page | Bob's Playground" property="og:title">
+    <meta content="https://a2--tuiter-react-web-app.netlify.app/tuiter/home.html"
+          property="og:url">
+    <meta content="Homepage of Tuiter Website" property="og:description">
+    <meta content="../images/birdie.svg" property="og:image">
+    <meta content="../images/birdie.svg" property="og:image:secure_url">
+    <meta content="website" property="og:type">
+    <meta content="Bob's Playground" property="og:site_name">
+    <meta content="https://a2--tuiter-react-web-app.netlify.app/tuiter/home.html"
+          name="twitter:domain">
+    <meta content="summary_large_image" name="twitter:card">
+    <meta content="Assignment 2 - Tuiter Home Page | Bob's Playground" name="twitter:title">
+    <meta content="https://a2--tuiter-react-web-app.netlify.app/tuiter/home.html"
+          name="twitter:url">
+    <meta content="Homepage of Tuiter Website" name="twitter:description">
+    <meta content="../images/birdie.svg" name="twitter:image">
+</head>
+<body style=" font-family:sans-serif; line-height:1.5em; max-width:40em; padding:0 2%; margin:auto">
+<p><a href="navigation.html"> <== Back to Navigation</a></p>
+<div style="text-align: center">
+    <h1>Tuiter</h1>
+    <h2>Home</h2>
+    <img alt="Profile Image of Me" height="48px" src="../images/profile-image.svg" width="48px"/>
+</div>
+<form id="create-a-tuit">
+    <fieldset>
+        <legend>Tuit</legend>
+        <p><textarea class="text-input" cols="75" id="write-a-tuit"
+                     name="content" placeholder="What's happening?" rows="4"></textarea></p>
+        <p>
+            <label for="select-one-visibility">Select Tuit Visibility:</label>
+            <select id="select-one-visibility">
+                <option selected value="EVERYONE">Everyone can reply</option>
+                <option value="FOLLOWING">People you follow</option>
+                <option value="MENTIONED">Only people you mention</option>
+            </select>
+            <button id="upload-image" name="upload-image" type="submit" value="Upload an Image">
+                Upload an Image
+            </button>
+            <button id="tuit" name="tuit" type="submit" value="Tuit"><b>Tuit</b></button>
+        </p>
+    </fieldset>
+</form>
+<ul>
+    <li>
+        <p><a href="topic.html">Topic 123</a></p>
+        <table width="100%">
+            <tr>
+                <td width="10%">
+                    <img alt="Profile Image of Me" height="48px" src="../images/profile-image.svg"
+                         width="48px"/>
+                </td>
+                <td width="70%">
+                    <a href="profile.html">Bobby</a> - @bob
+                </td>
+                <td width="20%">
+                    2h
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur
+                    , adipisci velit..."
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <a href="reply.html">Reply</a> - 123 |
+                    <a href="retuit.html">Retuit</a> - 234 |
+                    <a href="like.html">Like</a> - 345 |
+                    <a href="share.html">Share</a>
+                </td>
+            </tr>
+        </table>
+    </li>
+    <li>
+        <p><a href="topic.html">Topic 234</a></p>
+        <table width="100%">
+            <tr>
+                <td width="10%">
+                    <img alt="Profile Image of Me" height="48px" src="../images/profile-image.svg"
+                         width="48px"/>
+                </td>
+                <td width="70%">
+                    <a href="profile.html">Bobby</a> - @bob
+                </td>
+                <td width="20%">
+                    4h
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    "Donec in augue orci. Nulla vitae bibendum est, in tempor tortor.
+                    Donec aliquam libero quis arcu consequat molestie. Quisque lobortis
+                    mattis varius"
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <a href="reply.html">Reply</a> - 123 |
+                    <a href="retuit.html">Retuit</a> - 234 |
+                    <a href="like.html">Like</a> - 345 |
+                    <a href="share.html">Share</a>
+                </td>
+            </tr>
+        </table>
+    </li>
+</ul>
+</body>
+</html>

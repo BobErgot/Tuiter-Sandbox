@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 2 - Tuit | Bob's Playground</title>
+    <meta charset="utf-8" />
+    <link rel="icon" href="../images/birdie.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description"
+          content="Page to write and post your Tuits" />
+    <link rel="apple-touch-icon" href="../images/birdie.svg" />
+    <meta name="keywords" content="tuiter, social media, tuit, page">
+    <meta property="og:title" content="Assignment 2 - Tuit | Bob's Playground">
+    <meta property="og:url"
+          content="https://a2--tuiter-react-web-app.netlify.app/tuiter/tuit.html">
+    <meta property="og:description" content="Page to write and post your Tuits">
+    <meta property="og:image" content="../images/birdie.svg">
+    <meta property="og:image:secure_url" content="../images/birdie.svg">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Bob's Playground">
+    <meta name="twitter:domain"
+          content="https://a2--tuiter-react-web-app.netlify.app/tuiter/tuit.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Assignment 2 - Tuit | Bob's Playground">
+    <meta name="twitter:url"
+          content="https://a2--tuiter-react-web-app.netlify.app/tuiter/tuit.html">
+    <meta name="twitter:description" content="Page to write and post your Tuits">
+    <meta name="twitter:image" content="../images/birdie.svg">
+</head>
+<body style=" font-family:sans-serif; line-height:1.5em; max-width:40em; padding:0 2%; margin:auto">
+<p><a href="navigation.html"> <== Back to Navigation</a></p>
+<div style="text-align: center">
+    <h1>Tuiter</h1>
+    <h2>Tuit</h2>
+    <img src="../images/profile-image.svg" height="48px" width="48px" alt="Profile Image of Me"/>
+</div>
+<form id="create-a-tuit">
+    <fieldset><legend>Tuit</legend>
+        <p><textarea class="text-input" id="write-a-tuit" name="content"
+                     placeholder="What's happening?" rows="4" cols="75"></textarea></p>
+        <p>
+            <label for="select-one-visibility">Select Tuit Visibility:</label>
+            <select id="select-one-visibility">
+                <option value="EVERYONE" selected>Everyone can reply</option>
+                <option value="FOLLOWING">People you follow</option>
+                <option value="MENTIONED">Only people you mention</option>
+            </select>
+            <button type="submit" id="upload-image" name="upload-image" value="Upload an Image" >Upload an Image</button>
+            <button type="submit" id="tuit" name="tuit" value="Tuit"><b>Tuit</b></button>
+        </p>
+    </fieldset>
+</form>
+</body>
+</html>
