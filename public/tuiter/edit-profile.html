@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 2 - Tuiter Edit Profile Page | Bob's Playground</title>
+    <meta charset="utf-8" />
+    <link rel="icon" href="../images/birdie.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Page to edit you profile banner, image and name" />
+    <link rel="apple-touch-icon" href="../images/birdie.svg" />
+    <meta name="keywords" content="tuiter, social media, tuit, profile, edit, page">
+    <meta property="og:title" content="Assignment 2 - Tuiter Edit Profile Page | Bob's Playground">
+    <meta property="og:url"
+          content="https://a2--tuiter-react-web-app.netlify.app/tuiter/edit-profile.html">
+    <meta property="og:description" content="Page to edit you profile banner, image and name">
+    <meta property="og:image" content="../images/birdie.svg">
+    <meta property="og:image:secure_url" content="../images/birdie.svg">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Bob's Playground">
+    <meta name="twitter:domain"
+          content="https://a2--tuiter-react-web-app.netlify.app/tuiter/edit-profile.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Assignment 2 - Tuiter Edit Profile Page | Bob's Playground">
+    <meta name="twitter:url"
+          content="https://a2--tuiter-react-web-app.netlify.app/tuiter/edit-profile.html">
+    <meta name="twitter:description" content="Page to edit you profile banner, image and name">
+    <meta name="twitter:image" content="../images/birdie.svg">
+</head>
+<body style=" font-family:sans-serif; line-height:1.5em; max-width:40em; padding:0 2%; margin:auto">
+<p><a href="profile.html"> <== Back to Profile Page</a></p>
+<div style="text-align: center">
+    <h1>Tuiter</h1>
+    <h2>Edit Profile</h2>
+</div>
+<p><a href="profile.html">Save</a></p>
+<img src="../images/banner.jpeg" height="200px" width="100%" alt="Banner Image of Me"/>
+<input type="file" id="upload-banner-image" name="upload-banner-image" accept="image/png, image/jpeg">
+<table width="100%">
+    <tr>
+        <td width="10%">
+            <img src="../images/profile-image.svg" height="48px" width="48px" alt="Profile Image
+            of Me"/>
+        </td>
+        <td width="70%">
+            <input type="file" id="upload-image" name="upload-image" accept="image/png, image/jpeg">
+        </td>
+    </tr>
+</table>
+<hr>
+<label for="text-fields-username">Name - </label>
+<input id="text-fields-username" placeholder="Name" value="WebDev"/>
+<hr>
+<p>
+    <label for="write-a-bio">Bio</label><br>
+    <textarea class="text-input" id="write-a-bio" name="content"
+              placeholder="Duis ac orci porttitor, luctus tortor id, pharetra dui."
+              rows="10" cols="50"></textarea>
+</p>
+</body>
+</html>
