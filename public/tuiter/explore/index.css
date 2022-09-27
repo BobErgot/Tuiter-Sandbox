@@ -1,0 +1,21 @@
+body{
+    background-color: black;
+    margin: 0px 0px 0px 16px;
+}
+.wd-border-color{
+   color: rgb(47, 51, 54);
+}
+
+.wd-sticky-toolbar-bar{
+    top: -0.5px;
+    position: sticky;
+    display: flex;
+    background-color: white;
+    align-items: stretch;
+    border: 0 solid white;
+    flex-basis: auto;
+    flex-direction: column;
+    flex-shrink: 0;
+    margin: 0;
+    padding: 0;
+}
