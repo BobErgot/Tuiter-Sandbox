@@ -1,21 +1,212 @@
-body{
+body {
     background-color: black;
-    margin: 0px 0px 0px 16px;
-}
-.wd-border-color{
-   color: rgb(47, 51, 54);
+    border-color: rgb(47, 51, 54);
+    border-style: solid;
+    border-width: 1px;
+    margin: 0 0 0 16px;
+    font-family: Arial, sans-serif;
 }
 
-.wd-sticky-toolbar-bar{
-    top: -0.5px;
-    position: sticky;
+.wd-toolbar {
     display: flex;
-    background-color: white;
-    align-items: stretch;
-    border: 0 solid white;
-    flex-basis: auto;
-    flex-direction: column;
-    flex-shrink: 0;
-    margin: 0;
-    padding: 0;
+    justify-content: center;
+    align-items: center;
+    padding-left: 16px;
+    padding-right: 16px;
 }
+
+.wd-search-bar {
+    display: flex;
+    margin-left: 4px;
+    margin-right: 4px;
+    flex-grow: 1;
+}
+
+.wd-search-bar-form {
+    margin: 0;
+    display: flex;
+    border-style: solid;
+    flex: 1 1 0%;
+}
+
+.wd-search-bar-form-div {
+    background-color: rgb(32, 35, 39);
+    border-color: rgba(0, 0, 0, 0);
+    border-radius: 9999px;
+    flex-grow: 1;
+    border-width: 1px;
+    border-style: solid;
+
+}
+
+.wd-search-bar-label {
+    flex-direction: row;
+    display: flex;
+}
+.wd-search-icon-div {
+    cursor: default;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.wd-search-icon {
+    padding: 12px;
+    height: 1.25em;
+}
+
+.wd-search-bar-input-div {
+    cursor: text;
+    color: rgb(231, 233, 234);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    overflow-wrap: break-word;
+    display: flex;
+    width: 100%;
+}
+
+.wd-search-bar-input {
+    text-align: left;
+    font-size: inherit;
+    color: inherit;
+    background-color: rgba(0, 0, 0, 0);
+    outline-style: none;
+    width: 100%;
+    font-family: inherit;
+    border-radius: 0px;
+    padding: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    overflow-wrap: break-word;
+    border-width: 0;
+}
+
+.wd-settings {
+    min-width: 56px;
+    min-height: 32px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.wd-settings-gear {
+    border-color: rgba(0, 0, 0, 0);
+    margin-right: calc(-12px);
+    cursor: pointer;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 9999px;
+    color: rgb(29, 161, 242);
+    font-size: 36px;
+    text-decoration: none;
+}
+
+.wd-topic-tabs {
+    margin: 5px 17px 0;
+}
+
+.wd-topic-tab {
+    width: 100%;
+    color: rgb(29, 161, 242);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.wd-topic-tab li {
+    list-style-type: none;
+    text-align: center;
+    font-size: 15px;
+    padding: 16px;
+}
+
+.wd-topic-tab a {
+    text-decoration: none;
+    color: rgb(110, 118, 125);
+}
+
+.wd-highlighted {
+    border-bottom: solid 4px rgb(29, 161, 242);
+}
+
+.wd-highlighted a {
+    color: rgb(29, 161, 242);
+}
+
+.wd-filler{
+    background-color: rgba(47, 51, 54, 0.7);
+    border-top: solid 2px rgb(47, 51, 54);
+    height: 16px;
+}
+
+.wd-post-container {
+    border-bottom: solid 1px rgb(47, 51, 54);
+    padding-left: 17px;
+}
+
+.wd-post-title {
+    color: rgb(231, 233, 234);
+    font-size: 16px;
+    margin-top: 2px;
+    line-height: 20px;
+    font-weight: 700;
+    overflow-wrap: break-word;
+}
+
+.wd-suggested-post {
+    font-size: 13px;
+    font-weight: 400;
+    color: rgb(110, 118, 125);
+    display: block;
+    line-height: 16px;
+}
+
+.wd-post-author {
+    font-size: 13px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.wd-post-author-title {
+    color: rgb(231, 233, 234);
+    font-size: 13px;
+    margin-top: 2px;
+    line-height: 16px;
+    font-weight: 700;
+    overflow-wrap: break-word;
+}
+
+.wd-author-avatar {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.wd-post-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 16px;
+    margin: 10px 16px;
+}
+.wd-post {
+    font-size: 13px;
+    color: rgb(110, 118, 125);
+    display: flex;
+    justify-content: space-between;
+}
+
+.wd-post-time {
+    font-size: 13px;
+    color: rgb(110, 118, 125);
+}
+
+.wd-post-non-author {
+    font-size: 13px;
+    color: rgb(110, 118, 125);
+}
+
+
