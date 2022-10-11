@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Assignment 3 - Tuiter Explore Page | Bob's Playground</title>
+    <title>Assignment 4 - Tuiter Explore Page | Bob's Playground</title>
     <meta charset="utf-8"/>
     <link href="../../images/birdie.svg" rel="icon"/>
     <meta content="width=device-width, initial-scale=1" name="viewport"/>
@@ -11,132 +11,306 @@
           name="description"/>
     <link href="../../images/birdie.svg" rel="apple-touch-icon"/>
     <meta content="tuiter, explore, styling, css, design" name="keywords">
-    <meta content="Assignment 3 - Tuiter Explore Page | Bob's Playground" property="og:title">
-    <meta content="https://a3--tuiter-react-web-app.netlify.app/tuiter/explore/index.html"
+    <meta content="Assignment 4 - Tuiter Explore Page | Bob's Playground" property="og:title">
+    <meta content="https://a4--tuiter-react-web-app.netlify.app/tuiter/explore/index.html"
           property="og:url">
     <meta content="Exercise to implement css on Tuiter web application" property="og:description">
     <meta content="../../images/birdie.svg" property="og:image">
     <meta content="../../images/birdie.svg" property="og:image:secure_url">
     <meta content="website" property="og:type">
     <meta content="Bob's Playground" property="og:site_name">
-    <meta content="https://a3--tuiter-react-web-app.netlify.app/tuiter/explore/index.html"
+    <meta content="https://a4--tuiter-react-web-app.netlify.app/tuiter/explore/index.html"
           name="twitter:domain">
     <meta content="summary_large_image" name="twitter:card">
-    <meta content="Assignment 3 - Tuiter Explore Page | Bob's Playground" name="twitter:title">
-    <meta content="https://a3--tuiter-react-web-app.netlify.app/tuiter/explore/index.html"
+    <meta content="Assignment 4 - Tuiter Explore Page | Bob's Playground" name="twitter:title">
+    <meta content="https://a4--tuiter-react-web-app.netlify.app/tuiter/explore/index.html"
           name="twitter:url">
     <meta content="Exercise to implement css on Tuiter web application" name="twitter:description">
     <meta content="../../images/birdie.svg" name="twitter:image">
+    <link href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet"/>
     <link href="index.css" rel="stylesheet"/>
-    <link href="../style.css" rel="stylesheet"/>
 </head>
-<body>
-<div class="wd-toolbar">
-    <div class="wd-search-bar">
-        <form class="wd-search-bar-form">
-            <div class="wd-search-bar-form-div">
-                <label class="wd-search-bar-label">
-                    <div class="wd-search-icon-div">
-                        <img alt="Search Icon" class="wd-search-icon"
-                             src="../../images/search.svg">
-                    </div>
-                    <div class="wd-search-bar-input-div">
-                        <input class="wd-search-bar-input" placeholder="Search Tuiter" type="text"/>
-                    </div>
-                </label>
+<body class="bg-black">
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-2 col-lg-1 col-xl-2 py-2">
+            <div class="list-group bg-dark wd-list">
+                <a href="#" class="list-group-item list-group-item-action">
+                    <i class="fa-solid fa-kiwi-bird"></i>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action py-2">
+                    <i class="fa-solid fa-house wd-sidebar-icon"></i>
+                    <span class="d-none d-xl-inline fw-light">Home</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action py-2 active">
+                    <i class="fas fa-hashtag wd-sidebar-icon"></i>
+                    <span class="d-none d-xl-inline">Explore</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action py-2">
+                    <i class="fa-regular fa-bell wd-sidebar-icon"></i>
+                    <span class="d-none d-xl-inline fw-light">Notifications</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action py-2">
+                    <i class="fa-regular fa-envelope wd-sidebar-icon"></i>
+                    <span class="d-none d-xl-inline fw-light">Messages</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action py-2">
+                    <i class="fa-regular fa-bookmark wd-sidebar-icon"></i>
+                    <span class="d-none d-xl-inline fw-light">Bookmarks</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action py-2">
+                    <i class="fa-regular fa-rectangle-list wd-sidebar-icon"></i>
+                    <span class="d-none d-xl-inline fw-light">Lists</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action py-2">
+                    <i class="fa-regular fa-user wd-sidebar-icon"></i>
+                    <span class="d-none d-xl-inline fw-light">Profile</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action py-2 ps-2">
+						<span class="fa-stack wd-sidebar-stack-icon">
+						    <i class="fa-solid fa-ellipsis fa-stack-1x wd-fa-stack-0-8"></i>
+						    <i class="fa-regular fa-circle fa-stack-1x"></i>
+						</span>
+                    <span class="d-none d-xl-inline fw-light">More</span>
+                </a>
             </div>
-        </form>
+            <button class="btn btn-primary w-100 mt-1 mb-1 rounded-pill wd-bg-blue">
+                Tuit
+            </button>
+        </div>
+        <div class="col-10 col-lg-7 col-xl-6 py-2 border border-dark px-0">
+            <div class="row align-items-center px-4">
+                <div class="col-10">
+                    <div class="position-relative">
+								<span class="position-absolute wd-padding-12-6 text-secondary">
+								    <i class="fa-solid fa-magnifying-glass"></i>
+								</span>
+                        <label class="w-100">
+                            <input type="text" class="ps-5 form-control rounded-pill wd-search"
+                                   placeholder="Search Tuiter">
+                        </label>
+                    </div>
+                </div>
+                <div class="col-2 text-end">
+                    <a class="text-light" href="explore-settings.html">
+                        <i class="fa-solid fa-gear fa-1x"></i>
+                    </a>
+                </div>
+            </div>
+            <ul class="nav mt-2 justify-content-between border-bottom border-dark">
+                <li class="nav-item wd-topic-tab">
+                    <a class="nav-link active px-0 mx-3 text-light" href="for-you.html">For you</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-secondary" href="trending.html">Trending</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-secondary" href="news.html">News</a>
+                </li>
+                <li class="nav-item d-none d-sm-inline">
+                    <a class="nav-link text-secondary" href="sports.html">Sports</a>
+                </li>
+                <li class="nav-item d-none d-md-inline">
+                    <a class="nav-link text-secondary" href="entertainment.html">Entertainment</a>
+                </li>
+            </ul>
+            <div class="position-relative">
+                <img class="mt-2" src="../../images/Starship-Mk1-Day.png" width="100%"
+                     alt="SpaceX's Starship image"/>
+                <div class="position-absolute bottom-0 left-0 text-white ps-3 border-bottom border-dark">
+                    <h4 class="fw-bolder">
+                        SpaceX's Starship
+                    </h4>
+                </div>
+            </div>
+            <ul class="list-group wd-list">
+                <li class="list-group-item border-bottom border-dark">
+                    <div class="row">
+                        <div class="col">
+                            <p class="text-secondary m-0 p-0">Web Development</p>
+                            <div>
+                                <span class="fw-bolder">ReactJS</span>
+                                <i class="fa-solid fa-circle-check"></i>
+                                <span class="text-secondary"> - 2h</span>
+                            </div>
+                            <p class="fw-bolder m-0 p-0">
+                                React.js is a component based front end library that makes it
+                                very easy to build Single Page Applications or SPAs
+                            </p>
+                        </div>
+                        <div class="col-auto">
+                            <img class="rounded-4" src="../../images/react.svg"
+                                 alt="ReactJS logo">
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item border-bottom border-dark">
+                    <div class="row">
+                        <div class="col">
+                            <div>
+                                <span class="fw-bolder">JavaScript</span>
+                                <i class="fa-solid fa-circle-check"></i>
+                                <span class="text-secondary"> - 2h</span>
+                            </div>
+                            <p class="fw-bolder m-0 p-0">
+                                JavaScript is a programming language at can run on browsers as
+                                well as desktops
+                            </p>
+                            <p class="text-secondary m-0 p-0">123K Tuits</p>
+                        </div>
+                        <div class="col-auto">
+                            <img class="rounded-4" src="../../images/js_logo.png"
+                                 alt="JavaScript logo">
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item border-bottom border-dark">
+                    <div class="row">
+                        <div class="col">
+                            <div>
+                                <p class="text-secondary m-0 p-0">Web Development</p>
+                                <span class="fw-bolder">jQuery</span>
+                            </div>
+                            <p class="text-secondary m-0 p-0">123K Tuits</p>
+                        </div>
+                        <div class="col-auto">
+                            <img class="rounded-4" src="../../images/jquery_logo.png"
+                                 alt="jQuery logo">
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col">
+                            <div>
+                                <p class="text-secondary m-0 p-0">Web Development</p>
+                                <span class="fw-bolder">NodeJS</span>
+                                <i class="fa-solid fa-circle-check"></i>
+                                <span class="text-secondary"> - 2h</span>
+                            </div>
+                            <p class="text-secondary m-0 p-0">123K Tuits</p>
+                        </div>
+                        <div class="col-auto">
+                            <img class="rounded-4" src="../../images/nodeJs_logo.png"
+                                 alt="NodeJS logo">
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="d-none d-lg-block col-lg-4 py-2">
+            <ul class="list-group wd-follow-container">
+                <li class="list-group-item">
+                    <h5 class="fw-bolder">Who to follow</h5>
+                </li>
+                <li class="list-group-item py-2">
+                    <div class="row align-items-center">
+                        <div class="col-2 col-xl-auto">
+                            <img class="rounded-circle"
+                                 src="../../images/java_logo.png" alt="Java logo"/>
+                        </div>
+                        <div class="col-6 col-xl">
+                            <div class="fw-bolder text-nowrap">
+                                Java
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                            <div class="text-secondary">@Java</div>
+                        </div>
+                        <div class="col-4 col-xl-auto">
+                            <button class="fw-bolder btn btn-light rounded-pill px-4">
+                                Follow
+                            </button>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item py-2">
+                    <div class="row align-items-center">
+                        <div class="col-2 col-xl-auto">
+                            <img class="rounded-circle"
+                                 src="../../images/relativity_space_logo.png"
+                                 alt="Relativity Space logo"/>
+                        </div>
+                        <div class="col-6 col-xl">
+                            <div class="fw-bolder text-nowrap">
+                                Relativity Space
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                            <div class="text-secondary">@relativityspace</div>
+                        </div>
+                        <div class="col-4 col-xl-auto">
+                            <button class="fw-bolder btn btn-light rounded-pill px-4">
+                                Follow
+                            </button>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item py-2">
+                    <div class="row align-items-center">
+                        <div class="col-2 col-xl-auto">
+                            <img class="rounded-circle"
+                                 src="../../images/virgin_logo.png" alt="Virgin Galactic logo"/>
+                        </div>
+                        <div class="col-6 col-xl">
+                            <div class="fw-bolder text-nowrap">
+                                Virgin Galactic
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                            <div class="text-secondary">@virgingalactic</div>
+                        </div>
+                        <div class="col-4 col-xl-auto">
+                            <button class="fw-bolder btn btn-light rounded-pill px-4">
+                                Follow
+                            </button>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item py-2">
+                    <div class="row align-items-center">
+                        <div class="col-2 col-xl-auto">
+                            <img class="rounded-circle"
+                                 src="../../images/nasa_logo.jpg" alt="Nasa logo"/>
+                        </div>
+                        <div class="col-6 col-xl">
+                            <div class="fw-bolder text-nowrap">
+                                Nasa
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                            <div class="text-secondary">@NASA</div>
+                        </div>
+                        <div class="col-4 col-xl-auto">
+                            <button class="fw-bolder btn btn-light rounded-pill px-4">
+                                Follow
+                            </button>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item py-2">
+                    <div class="row align-items-center">
+                        <div class="col-2 col-xl-auto">
+                            <img class="rounded-circle"
+                                 src="../../images/tesla_logo.png" alt="Tesla logo"/>
+                        </div>
+                        <div class="col-6 col-xl">
+                            <div class="fw-bolder text-nowrap">
+                                Tesla
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                            <div class="text-secondary">@Tesla</div>
+                        </div>
+                        <div class="col-4 col-xl-auto">
+                            <button class="fw-bolder btn btn-light rounded-pill px-4">
+                                Follow
+                            </button>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item py-2">
+                    <a class="wd-text-blue text-decoration-none" href="#">Show more</a>
+                </li>
+            </ul>
+        </div>
     </div>
-    <div class="wd-settings">
-        <a class="wd-settings-gear" href="explore-settings.html">&#x2699;</a>
-    </div>
-</div>
-
-<div class="wd-topic-tabs">
-    <ul class="wd-topic-tab">
-        <li class="wd-highlighted">
-            <div><a href="">For you</a></div>
-        </li>
-        <li>
-            <div><a href="">Trending</a></div>
-        </li>
-        <li>
-            <div><a href="">Covid-19</a></div>
-        </li>
-        <li>
-            <div><a href="">News</a></div>
-        </li>
-        <li>
-            <div><a href="">Sports</a></div>
-        </li>
-        <li>
-            <div><a href="">Entertainment</a></div>
-        </li>
-    </ul>
-</div>
-
-<div class="wd-filler"></div>
-
-<div class="wd-post-container wd-suggested-post">
-    <p>Trending in Science</p>
-    <p class="wd-post-title">Starship</p>
-    <p>55.5K Tuits</p>
-</div>
-
-<div class="wd-post-container wd-suggested-post">
-    <p>Sports · Trending</p>
-    <p class="wd-post-title">John Doe</p>
-    <p>5,218 Tuits</p>
-</div>
-
-<div class="wd-post-container wd-post-author">
-    <div>
-        <p>
-            <img alt="NEU Logo" class="wd-author-avatar" src="../../images/neu_times.jpg">
-            <span class="wd-post-author-title">The NEU York Times</span>
-            <span class="wd-post-time"> · Yesterday</span>
-        </p>
-        <p class="wd-post-title">
-            KNN's Cuomo conundrum: A moon host with a sister in limelight
-        </p>
-    </div>
-    <div>
-        <img alt="moon image" class="wd-post-image" src="../../images/moon.jpg">
-    </div>
-</div>
-
-<div class="wd-post-container wd-post-author">
-    <div>
-        <p class="wd-post-non-author"> COVID-19 · LIVE </p>
-        <p class="wd-post-title">
-            COVID-19: News and updates for NEU Boston
-        </p>
-    </div>
-    <div>
-        <img alt="covid image" class="wd-post-image" src="../../images/covid.jpg">
-    </div>
-</div>
-
-<div class="wd-post-container wd-post-author">
-    <div>
-        <p>
-            <img alt="Iceberg logo" class="wd-author-avatar" src="../../images/iceberg.jpg">
-            <span class="wd-post-author-title">Iceberg Opinion</span>
-            <span class="wd-post-time"> · Yesterday</span>
-        </p>
-        <p class="wd-post-title">
-            Thinking about getting a husky? Read this first.
-        </p>
-    </div>
-    <div>
-        <img alt="husky good boy" class="wd-post-image" src="../../images/husky.jpg">
-    </div>
-</div>
-
-<div class="wd-post-container wd-suggested-post">
-    <p>Trending in NEU</p>
-    <p class="wd-post-title">Underwear Run</p>
-    <p>1,259 Tuits</p>
 </div>
 </body>
 </html>
