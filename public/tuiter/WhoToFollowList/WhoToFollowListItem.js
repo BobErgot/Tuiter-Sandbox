@@ -25,9 +25,9 @@ const WhoToFollowListItem = (who) => {
 export default WhoToFollowListItem;
 
 // Test Code -
-function exploreComponent() {
-    $('#wd-explore').append(`
-        ${WhoToFollowListItem()}
-   `);
-}
-$(exploreComponent);
+// function exploreComponent() {
+//     $('#wd-explore').append(`
+//         ${WhoToFollowListItem()}
+//    `);
+// }
+// $(exploreComponent);
