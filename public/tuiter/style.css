@@ -1,8 +1,59 @@
-body {
+.wd-bg-blue {
+    background-color: rgb(29, 161, 242);
+}
+
+.wd-color-blue {
+    color: rgb(29, 161, 242);
+}
+
+.wd-fa-stack-0-8 {
+    font-size: 0.8em;
+}
+
+.wd-follow-container .list-group-item {
+    background-color: #17181c;
+    color: white;
+}
+
+.wd-follow-container img {
+    width: 50px;
+    height: 50px;
+}
+
+.wd-list img {
+    width: 100px;
+    height: 100px;
+}
+
+.wd-list .active {
+    border: none;
+    font-weight: bold;
+}
+
+.wd-list .list-group-item {
     background-color: black;
-    border-color: rgb(47, 51, 54);
-    border-style: solid;
-    border-width: 1px;
-    margin: 0 0 0 16px;
-    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.wd-padding-12-6 {
+    padding-left: 12px;
+    padding-top: 6px;
+}
+
+.wd-search {
+    background-color: rgb(32, 35, 39);
+    border-color: rgb(32, 35, 39);
+}
+
+.wd-sidebar-icon {
+    width: 25px;
+}
+
+.wd-sidebar-stack-icon {
+    width: 30px;
+}
+
+.wd-topic-tab .active {
+    border-bottom: 4px solid rgb(255, 255, 255);
+    border-radius: 0;
 }
