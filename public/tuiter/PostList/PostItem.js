@@ -3,7 +3,7 @@ const PostItem = (post) => {
             <li class="list-group-item border-bottom border-light">
                 <div class="container border-1 p-3">
                     <div class="row">
-                        <div class="col-1">
+                        <div class="col-1 p-0">
                             <img alt="${post.userName} profile image" class="wd-avatar" 
                             src="${post.avatar}"/>
                         </div>
