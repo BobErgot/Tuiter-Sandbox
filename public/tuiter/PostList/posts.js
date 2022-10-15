@@ -1,0 +1,33 @@
+export default [
+    {
+        avatar: '../../images/elon_spacex_avatar.jpg',
+        userName: 'Elon Musk',
+        handle:'elonmusk',
+        time: '23h',
+        verified: true,
+        post:'Amazing show about <span class="text-primary">@Inspiration4x</span> mission!',
+        image:'../../images/elon_countdown_post.jpg',
+        title:'Countdown:Inspiration4 Mission to Space | Netflix Official Site',
+        desc:'From training to launch to landing, this all-access docuseries rides along with the Inspiration4 crew on the first all-civilian orbital space...',
+        link:'',
+        comments:'4.2k',
+        retweets:'3.5k',
+        hearts:'37.5k',
+    },
+    {
+        avatar: '../../images/new_york_avatar.jpg',
+        userName: 'New York Post',
+        handle:'nypost',
+        time: '23h',
+        verified: false,
+        post:'Grimes seen reading Karl Marx following split with world\'s '
+             + 'richest man Elon Musk <span class="text-primary">trib.al/nx2Gfaq</span>',
+        image:'../../images/new_york_post.jpg',
+        title:'',
+        desc:'',
+        link:'',
+        comments:'965',
+        retweets:'2.4k',
+        hearts:'4k',
+    },
+];

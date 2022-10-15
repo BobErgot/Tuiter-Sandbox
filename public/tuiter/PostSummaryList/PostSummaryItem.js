@@ -15,8 +15,7 @@ const PostSummaryItem = (post) => {
                         <p class="text-secondary m-0 p-0  ${post.tweets ? '' : 'd-none'}">${post.tweets} Tuits</p>
                     </div>
                     <div class="col-auto">
-                        <img class="rounded-4" src="${post.image}"
-                             alt="${post.userName} logo">
+                        <img class="rounded-4 wd-list-img" src="${post.image}" alt="${post.userName} logo">
                     </div>
                 </div>
             </li>
