@@ -5,7 +5,7 @@ import ExploreComponent from "./ExploreComponent.js";
 function exploreComponent() {
     $('#wd-explore').append(`
         <div class="col-2 col-lg-1 col-xl-2 py-2">
-            ${NavigationSidebar()}
+            ${NavigationSidebar('explore')}
         </div>
          <div class="col-10 col-lg-7 col-xl-6 py-2 border border-light px-0">
             ${ExploreComponent()}
