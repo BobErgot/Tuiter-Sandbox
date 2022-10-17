@@ -19,7 +19,7 @@ export default [
         userName: 'New York Post',
         handle:'nypost',
         time: '23h',
-        verified: false,
+        verified: true,
         post:'Grimes seen reading Karl Marx following split with world\'s '
              + 'richest man Elon Musk <span class="text-primary">trib.al/nx2Gfaq</span>',
         image:'../../images/new_york_post.jpg',

@@ -12,7 +12,8 @@ const PostItem = (post) => {
                                 <span class="fw-bolder text-white">${post.userName}</span> 
                                 <i class="fas fa-check-circle ${post.verified ? '' : 'd-none'}"></i>
                                 <span class="text-secondary"> @${post.handle}</span>
-                                <span>· ${post.time}</span>
+                                <span class="text-secondary">· ${post.time}</span>
+                                 <i class="fa-solid fa-ellipsis float-end text-secondary"></i>
                              </div>
                              <div class="container text-white ${post.post ? '' : 'd-none'}">
                                 <p>${post.post}</p>
