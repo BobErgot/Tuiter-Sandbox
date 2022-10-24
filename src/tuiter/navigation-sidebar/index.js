@@ -1,26 +1,32 @@
 import React from "react";
+import {Link} from "react-router-dom";
+import {useLocation} from "react-router";
 
-const NavigationSidebar = (
-    {
-        active = 'explore'
-    }
-) => {
+const NavigationSidebar = () => {
+    const {pathname} = useLocation();
+    const paths = pathname.split('/')
+    const active = paths[2];
     return (
         <>
             <div className="list-group bg-dark">
                 <a href="/" className="list-group-item list-group-item-action">
                     <i className="bi bi-airplane-fill"></i>
                 </a>
-                <a href="../homescreen/"
+                <Link to="/tuiter/home"
                    className={`list-group-item list-group-item-action py-2 ${active === 'home'?'active':''}`}>
                     <i className="bi bi-house-fill wd-sidebar-icon"></i>
                     <span className="d-none d-xl-inline fw-light">Home</span>
-                </a>
-                <a href="../explorescreen/"
+                </Link>
+                <Link to="/tuiter/explore"
                    className={`list-group-item list-group-item-action py-2 ${active === 'explore'?'active':''}`}>
                     <i className="bi bi-hash wd-sidebar-icon"></i>
                     <span className="d-none d-xl-inline">Explore</span>
-                </a>
+                </Link>
+                <Link to="/"
+                      className={`list-group-item list-group-item-action py-2 ${active === 'labs'?'active':''}`}>
+                    <i className="bi bi-cup-straw wd-sidebar-icon"></i>
+                    <span className="d-none d-xl-inline">Labs</span>
+                </Link>
                 <a href="#"
                    className="list-group-item list-group-item-action py-2 ${active==='notifications'?'active':''}">
                     <i className="bi bi-bell-fill wd-sidebar-icon"></i>
