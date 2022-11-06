@@ -1,14 +1,16 @@
 import Assignment6 from "./a6";
+import Assignment7 from "./a7";
 import Nav from "../nav";
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap-icons/font/bootstrap-icons.css';
+import {Route, Routes} from "react-router";
 
 function Labs() {
-    return(
-        <div>
-            <Nav/>
-            <Assignment6/>
-        </div>
-    );
+    return (<div>
+        <Nav/>
+        <Routes>
+            <Route index element={<Assignment6/>}/>
+            <Route path="/a7" element={<Assignment7/>}/>
+        </Routes>
+    </div>);
 }
+
 export default Labs;
