@@ -5,7 +5,9 @@ import WhatsHappening from "./whats-happening";
 const HomeComponent = () => {
     return (
         <>
-            <h4>Home</h4>
+            <div className="container text-center">
+                <h4>Home</h4>
+            </div>
             <WhatsHappening/>
             <TuitsList/>
         </>
