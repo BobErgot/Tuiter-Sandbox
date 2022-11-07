@@ -24,7 +24,7 @@ const NavigationSidebar = () => {
                 </Link>
                 <Link to="/"
                       className={`list-group-item list-group-item-action py-2 ${active === 'labs'?'active':''}`}>
-                    <i className="bi bi-cup-straw wd-sidebar-icon"></i>
+                    <i className="bi bi-asterisk wd-sidebar-icon"></i>
                     <span className="d-none d-xl-inline">Labs</span>
                 </Link>
                 <a href="#"
