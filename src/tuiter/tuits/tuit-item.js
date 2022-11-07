@@ -25,7 +25,8 @@ const TuitItem = ({tuit}) => {
                             <i className={`bi bi-check-circle-fill m-1 ${tuit.verified ? '' : 'd-none'}`}></i>
                             <span className="text-secondary"> @{tuit.handle}</span>
                             <span className="text-secondary"> · {tuit.time}</span>
-                            <i className="bi bi-three-dots float-end text-secondary"></i>
+                            <i className="bi bi-x-lg float-end text-secondary"
+                               onClick={() => deleteTuitHandler(tuit._id)}></i>
                         </div>
                         <div className={`container text-white ${tuit.tuit ? '' : 'd-none'}`}>
                             <p>{tuit.tuit}</p>
