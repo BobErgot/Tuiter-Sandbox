@@ -71,6 +71,13 @@
     height: 65px;
 }
 
+.wd-profile-avatar {
+    top: 220px;
+    left: 15px;
+    width: 128px;
+    height: 128px;
+}
+
 .wd-post-summary {
     border-style: solid;
     border-width: 1px;

@@ -47,11 +47,11 @@ const NavigationSidebar = () => {
                     <i className="bi bi-list wd-sidebar-icon"></i>
                     <span className="d-none d-xl-inline fw-light">Lists</span>
                 </a>
-                <a href="#"
-                   className="list-group-item list-group-item-action py-2 ${active==='profile'?'active':''}">
+                <Link to="/tuiter/profile"
+                    className={`list-group-item list-group-item-action py-2 ${(active === 'profile' || active === 'edit-profile')?'active':''}`}>
                     <i className="bi bi-person-fill wd-sidebar-icon"></i>
                     <span className="d-none d-xl-inline fw-light">Profile</span>
-                </a>
+                </Link>
                 <a href="#"
                    className="list-group-item list-group-item-action py-2 ${active==='profile'?'active':''}">
                     <i className="bi bi-three-dots wd-sidebar-icon"></i>
