@@ -1,8 +1,9 @@
 import React from "react";
 import {useDispatch} from "react-redux";
 import {likeTuitToggle} from "./tuits-reducer";
+import {updateTuitThunk} from "../../services/tuits-thunks";
 
-const TuitStats = ({ replies, retuits, likes, liked, tuit}) => {
+const TuitStats = ({ replies, retuits, likes, liked, disliked, tuit}) => {
     const dispatch = useDispatch();
     const toggleLike = (tuit) => {
         dispatch(likeTuitToggle(tuit))
@@ -20,9 +21,18 @@ const TuitStats = ({ replies, retuits, likes, liked, tuit}) => {
                 </div>
                 <div className="col">
                     <a className={`text-decoration-none text-secondary
-                    ${liked ? 'text-danger' : ''}`} href="#" onClick={() => toggleLike(tuit)}>
+                    ${liked ? 'text-danger' : ''}`}
+                       onClick={() => {dispatch(updateTuitThunk({...tuit, likes: tuit.likes + 1}))}}>
                         <i className={`bi ${liked ? 'bi-heart-fill' : 'bi-heart'}`}></i>
-                        <span className="ps-2">{likes}</span>
+                        <span className="ps-2">{tuit.likes}</span>
+                    </a>
+                </div>
+                <div className="col">
+                    <a className={`text-decoration-none text-secondary
+                    ${disliked ? 'text-danger' : ''}`}
+                       onClick={() => {dispatch(updateTuitThunk({...tuit, dislikes: tuit.dislikes + 1}))}}>
+                        <i className={`bi ${disliked ? 'bi-hand-thumbs-down-fill' : 'bi-hand-thumbs-down'}`}></i>
+                        <span className="ps-2">{tuit.dislikes}</span>
                     </a>
                 </div>
                 <div className="col">

@@ -17,7 +17,7 @@ const store = configureStore({reducer:
         {
             who: whoReducer,
             posts: postsReducer,
-            tuits: tuitsReducer,
+            tuitsData: tuitsReducer,
             profile: profileReducer
         }});
 
