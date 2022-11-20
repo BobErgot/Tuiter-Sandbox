@@ -12,7 +12,7 @@ const TuitsList = () => {
             <ul className="list-group  wd-list">
                 {
                     loading &&
-                    <li className="list-group-item">
+                    <li className="list-group-item border-bottom border-light">
                         Loading...
                     </li>
                 }
