@@ -23,7 +23,7 @@ const store = configureStore({reducer:
 
 function Tuiter() {
     return (<Provider store={store}>
-        <iv className="row">
+        <div className="row">
             <div className="col-2 col-lg-1 col-xl-2 py-2">
                 <NavigationSidebar active="explore"/>
             </div>
@@ -38,7 +38,7 @@ function Tuiter() {
             <div className="d-none d-lg-block col-lg-4 py-2">
                 <WhoToFollowList/>
             </div>
-        </iv>
+        </div>
     </Provider>);
 }
 
