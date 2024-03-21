@@ -1,70 +1,83 @@
-# Getting Started with Create React App
+# Tuiter - Social Media Platform Sandbox
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Tuiter is a custom social media platform designed to emulate the core features of Twitter. This project was created as a learning tool for React, Redux, and related technologies. Users can engage with the platform by creating posts, reacting to them, and managing their own notes.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Tuiter**: Users can post messages, like and dislike posts, and delete their own posts.
+- **Explore**: Discover and follow trending topics.
+- **Profile Management**: Create and edit user profiles, with personalized bios, locations, and website links.
+- **Notes**: A notes section where users can jot down and manage personal notes, using Redux for state management.
+- **Interaction**: Engage with posts through reactions like hearts and dislikes, demonstrating real-time interaction within the platform.
 
-### `npm start`
+## Screenshots
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Profile Page
+![Profile Page](screenshots/profile-page.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Tuit Page
+![Tuit Page](screenshots/tuit-page.png)
 
-### `npm test`
+### Note Page
+![Note Page](screenshots/note-page.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technologies Used
 
-### `npm run build`
+- React.js
+- Redux Toolkit
+- React Router
+- Axios for API requests
+- Node.js and Express.js for the backend API - [Tuiter Sandbox Server](https://github.com/BobErgot/Tuiter-Sandbox-Server)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Prerequisites
+- npm
+    ```sh
+      npm install npm@latest -g
+    ```
+### Installation
 
-### `npm run eject`
+1. **Clone the repository:**
+   ```sh
+   git clone https://github.com/BobErgot/Tuiter-Sandbox
+   ```
+   
+2. **Navigate to the project directory:**
+   ```sh
+   cd Tuiter-Sandbox
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. **Install the necessary packages:**
+   ```sh
+   npm install
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. **Set up the environment variables in a .env file in the root directory:**
+   ```sh
+   REACT_APP_API_BASE='http://localhost:4000/api'
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Running the Application
+Run the following command to start the application:
+   ```sh
+   npm start
+   ```
+This will launch the app in development mode. Open http://localhost:3000 to view it in the browser.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Code Structure
 
-## Learn More
+- `tuiter-service.js`: Manages API requests for posting and interacting with tuits.
+- `tuits-thunks.js`: Contains thunk middleware for asynchronous Redux actions.
+- `App.js`: Sets up routing and navigation using React Router.
+- `profile/`: Includes components and reducer for user profile management.
+- `notes/`: Features components and Redux setup for managing personal notes.
+- `tuit-item.js`: Renders individual tuit posts with functionality to delete.
+- `tuit-stats.js`: Provides UI for tuit interactions like likes and dislikes.
+- `tuits-list.js`: Displays a list of tuits with real-time updates.
+- `tuits-reducer.js`: Manages the state of tuits, including adding and removing reactions.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## License
+Distributed under the MIT License. See the LICENSE file for more details.
