@@ -1,7 +1,7 @@
 import {createSlice} from "@reduxjs/toolkit";
 
 const initialTodos = [
-    { id: "123",
+    { _id: "123",
     do: "Accelerate the world's transition to sustainable energy",
     done: false},
     {

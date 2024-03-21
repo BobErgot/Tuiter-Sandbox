@@ -14,7 +14,7 @@ const ProfileComponent = () => {
                      position-absolute rounded-circle float-start"/>
             </div>
             <div className="mb-5">
-                <Link to="/tuiter/edit-profile">
+                <Link to="/edit-profile">
                     <button className="btn btn-light fw-bold rounded-pill float-end mt-2 me-3">
                         Edit Profile
                     </button>

@@ -33,7 +33,7 @@ const EditProfileComponent = () => {
         <div className="mb-4">
             <div className="row mb-2">
                 <div className="col-1 ms-3 align-self-center">
-                    <Link to="/tuiter/profile">
+                    <Link to="/profile">
                         <i className="bi bi-x-lg"></i>
                     </Link>
                 </div>

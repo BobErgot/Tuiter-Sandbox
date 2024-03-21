@@ -38,7 +38,7 @@ const Todos = () => {
                         value={todo.do}
                         className="form-control w-75"/>
                 </li>
-                {todos.map((todo, index) => <li className="list-group-item">
+                {todos.map((todo, index) => <li key={todo._id} className="list-group-item">
                     <button onClick={() => deleteTodoClickHandler(index)}
                             className="btn btn-danger float-end ms-2">
                         Delete

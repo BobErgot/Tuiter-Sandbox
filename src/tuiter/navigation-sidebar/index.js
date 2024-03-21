@@ -12,17 +12,17 @@ const NavigationSidebar = () => {
                 <a href="/" className="list-group-item list-group-item-action">
                     <i className="bi bi-airplane-fill"></i>
                 </a>
-                <Link to="/tuiter/home"
+                <Link to="/home"
                    className={`list-group-item list-group-item-action py-2 ${active === 'home'?'active':''}`}>
                     <i className="bi bi-house-fill wd-sidebar-icon"></i>
                     <span className="d-none d-xl-inline fw-light">Home</span>
                 </Link>
-                <Link to="/tuiter/explore"
+                <Link to="/explore"
                    className={`list-group-item list-group-item-action py-2 ${active === 'explore'?'active':''}`}>
                     <i className="bi bi-hash wd-sidebar-icon"></i>
                     <span className="d-none d-xl-inline">Explore</span>
                 </Link>
-                <Link to="/"
+                <Link to="/notes"
                       className={`list-group-item list-group-item-action py-2 ${active === 'labs'?'active':''}`}>
                     <i className="bi bi-asterisk wd-sidebar-icon"></i>
                     <span className="d-none d-xl-inline">Notes</span>
@@ -47,7 +47,7 @@ const NavigationSidebar = () => {
                     <i className="bi bi-list wd-sidebar-icon"></i>
                     <span className="d-none d-xl-inline fw-light">Lists</span>
                 </a>
-                <Link to="/tuiter/profile"
+                <Link to="/profile"
                     className={`list-group-item list-group-item-action py-2 ${(active === 'profile' || active === 'edit-profile')?'active':''}`}>
                     <i className="bi bi-person-fill wd-sidebar-icon"></i>
                     <span className="d-none d-xl-inline fw-light">Profile</span>
